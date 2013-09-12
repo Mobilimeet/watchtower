@@ -15,6 +15,9 @@
 		7C94C8C417E1E6D4005DC66B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C94C8C317E1E6D4005DC66B /* AppDelegate.m */; };
 		7C94C8C617E1E6D4005DC66B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C94C8C517E1E6D4005DC66B /* Images.xcassets */; };
 		7C94C8E017E1E795005DC66B /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CB87F316D0CD5400BCD3B3 /* QuickLook.framework */; };
+		7C94C8E617E1E9E7005DC66B /* AZAPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C94C8E317E1E9E7005DC66B /* AZAPreviewController.m */; };
+		7C94C8E717E1E9E7005DC66B /* AZAPreviewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C94C8E517E1E9E7005DC66B /* AZAPreviewItem.m */; };
+		7C94C8EB17E1EA42005DC66B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C94C8ED17E1EA42005DC66B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,13 @@
 		7C94C8C217E1E6D4005DC66B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C94C8C317E1E6D4005DC66B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7C94C8C517E1E6D4005DC66B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7C94C8E217E1E9E7005DC66B /* AZAPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPreviewController.h; sourceTree = "<group>"; };
+		7C94C8E317E1E9E7005DC66B /* AZAPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPreviewController.m; sourceTree = "<group>"; };
+		7C94C8E417E1E9E7005DC66B /* AZAPreviewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAPreviewItem.h; sourceTree = "<group>"; };
+		7C94C8E517E1E9E7005DC66B /* AZAPreviewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAPreviewItem.m; sourceTree = "<group>"; };
+		7C94C8E817E1EA06005DC66B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C94C8EC17E1EA42005DC66B /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7C94C8EE17E1EA45005DC66B /* tr */ = {isa = PBXFileReference; lastKnownFileType = file; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		96C99F7416D109970082A61A /* AZAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZAAppDelegate.h; path = RemoteQuickLookTest/AZAAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		96C99F7516D109970082A61A /* AZAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZAAppDelegate.m; path = RemoteQuickLookTest/AZAAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		96C99F7616D109970082A61A /* AZARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZARootViewController.h; path = RemoteQuickLookTest/AZARootViewController.h; sourceTree = SOURCE_ROOT; };
@@ -75,13 +85,26 @@
 				7C94C8BC17E1E6D4005DC66B /* InfoPlist.strings */,
 				7C94C8BF17E1E6D4005DC66B /* main.m */,
 				7C94C8C117E1E6D4005DC66B /* WatchTower-Prefix.pch */,
+				7C94C8ED17E1EA42005DC66B /* Localizable.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C94C8E117E1E9E7005DC66B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7C94C8E217E1E9E7005DC66B /* AZAPreviewController.h */,
+				7C94C8E317E1E9E7005DC66B /* AZAPreviewController.m */,
+				7C94C8E417E1E9E7005DC66B /* AZAPreviewItem.h */,
+				7C94C8E517E1E9E7005DC66B /* AZAPreviewItem.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		96CB87C416D0CD4A00BCD3B3 = {
 			isa = PBXGroup;
 			children = (
+				7C94C8E117E1E9E7005DC66B /* Classes */,
 				7C94C8B917E1E6D4005DC66B /* WatchTower */,
 				96CB87D616D0CD4A00BCD3B3 /* RemoteQuickLookTest */,
 				96CB87FC16D0D3F100BCD3B3 /* Resources */,
@@ -184,6 +207,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				tr,
 			);
 			mainGroup = 96CB87C416D0CD4A00BCD3B3;
 			productRefGroup = 96CB87CE16D0CD4A00BCD3B3 /* Products */;
@@ -201,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C94C8BE17E1E6D4005DC66B /* InfoPlist.strings in Resources */,
+				7C94C8EB17E1EA42005DC66B /* Localizable.strings in Resources */,
 				7C94C8C617E1E6D4005DC66B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C94C8E717E1E9E7005DC66B /* AZAPreviewItem.m in Sources */,
 				7C94C8C417E1E6D4005DC66B /* AppDelegate.m in Sources */,
 				7C94C8C017E1E6D4005DC66B /* main.m in Sources */,
+				7C94C8E617E1E9E7005DC66B /* AZAPreviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +251,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				7C94C8BD17E1E6D4005DC66B /* en */,
+				7C94C8E817E1EA06005DC66B /* tr */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7C94C8ED17E1EA42005DC66B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C94C8EC17E1EA42005DC66B /* en */,
+				7C94C8EE17E1EA45005DC66B /* tr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
