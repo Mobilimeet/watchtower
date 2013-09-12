@@ -46,13 +46,6 @@
 		7CD059BA17E1ED4700B82B58 /* WatchTowerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchTowerController.h; sourceTree = "<group>"; };
 		7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchTowerController.m; sourceTree = "<group>"; };
 		7CD059BE17E1F50100B82B58 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
-		96C99F7416D109970082A61A /* AZAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZAAppDelegate.h; path = RemoteQuickLookTest/AZAAppDelegate.h; sourceTree = SOURCE_ROOT; };
-		96C99F7516D109970082A61A /* AZAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZAAppDelegate.m; path = RemoteQuickLookTest/AZAAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		96C99F7616D109970082A61A /* AZARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZARootViewController.h; path = RemoteQuickLookTest/AZARootViewController.h; sourceTree = SOURCE_ROOT; };
-		96C99F7716D109970082A61A /* AZARootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZARootViewController.m; path = RemoteQuickLookTest/AZARootViewController.m; sourceTree = SOURCE_ROOT; };
-		96C99F7816D109970082A61A /* AZARootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AZARootViewController.xib; path = RemoteQuickLookTest/AZARootViewController.xib; sourceTree = SOURCE_ROOT; };
-		96C99F8C16D109AD0082A61A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RemoteQuickLookTest/main.m; sourceTree = SOURCE_ROOT; };
-		96C99F8E16D109AD0082A61A /* RemoteQuickLookTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RemoteQuickLookTest-Prefix.pch"; path = "RemoteQuickLookTest/RemoteQuickLookTest-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		96CB87D016D0CD4A00BCD3B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96CB87D216D0CD4A00BCD3B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96CB87D416D0CD4A00BCD3B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,7 +113,6 @@
 			children = (
 				7C94C8E117E1E9E7005DC66B /* Classes */,
 				7C94C8B917E1E6D4005DC66B /* WatchTower */,
-				96CB87D616D0CD4A00BCD3B3 /* RemoteQuickLookTest */,
 				96CB87FC16D0D3F100BCD3B3 /* Resources */,
 				96CB87CF16D0CD4A00BCD3B3 /* Frameworks */,
 				96CB87CE16D0CD4A00BCD3B3 /* Products */,
@@ -146,30 +138,6 @@
 				D1BFFA0C553346268669CB10 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		96CB87D616D0CD4A00BCD3B3 /* RemoteQuickLookTest */ = {
-			isa = PBXGroup;
-			children = (
-				96C99F7416D109970082A61A /* AZAAppDelegate.h */,
-				96C99F7516D109970082A61A /* AZAAppDelegate.m */,
-				96C99F7616D109970082A61A /* AZARootViewController.h */,
-				96C99F7716D109970082A61A /* AZARootViewController.m */,
-				96C99F7816D109970082A61A /* AZARootViewController.xib */,
-				96CB87D716D0CD4A00BCD3B3 /* Supporting Files */,
-			);
-			name = RemoteQuickLookTest;
-			path = RemoteQuickLook;
-			sourceTree = "<group>";
-		};
-		96CB87D716D0CD4A00BCD3B3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				96C99F8C16D109AD0082A61A /* main.m */,
-				96C99F8E16D109AD0082A61A /* RemoteQuickLookTest-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			path = RemoteQuickLookTest;
 			sourceTree = "<group>";
 		};
 		96CB87FC16D0D3F100BCD3B3 /* Resources */ = {
