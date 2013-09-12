@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>716F3C7D-A860-4013-BFBD-1ED55FA734BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WatchTower</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E99E9589-2328-48DC-A405-A8A34D2F18A2</key>
+		<string>https://github.com/monsieurje/watchtower.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WatchTower.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E99E9589-2328-48DC-A405-A8A34D2F18A2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/monsieurje/watchtower.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E99E9589-2328-48DC-A405-A8A34D2F18A2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E99E9589-2328-48DC-A405-A8A34D2F18A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WatchTower</string>
+		</dict>
+	</array>
+</dict>
+</plist>
