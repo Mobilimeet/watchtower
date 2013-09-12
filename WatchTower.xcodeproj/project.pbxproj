@@ -21,6 +21,7 @@
 		7C94C8F017E1EB56005DC66B /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C94C8EF17E1EB56005DC66B /* iPhone.storyboard */; };
 		7CD059BC17E1ED4700B82B58 /* WatchTowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */; };
 		7CD059BD17E1F30500B82B58 /* dribbble_debut.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */; };
+		7CD059BF17E1F50100B82B58 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD059BE17E1F50100B82B58 /* iPad.storyboard */; };
 		98B67E6C4F7D4C1891A7DD91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BFFA0C553346268669CB10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		7C94C8EF17E1EB56005DC66B /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		7CD059BA17E1ED4700B82B58 /* WatchTowerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchTowerController.h; sourceTree = "<group>"; };
 		7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchTowerController.m; sourceTree = "<group>"; };
+		7CD059BE17E1F50100B82B58 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		96C99F7416D109970082A61A /* AZAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZAAppDelegate.h; path = RemoteQuickLookTest/AZAAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		96C99F7516D109970082A61A /* AZAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZAAppDelegate.m; path = RemoteQuickLookTest/AZAAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		96C99F7616D109970082A61A /* AZARootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZARootViewController.h; path = RemoteQuickLookTest/AZARootViewController.h; sourceTree = SOURCE_ROOT; };
@@ -82,6 +84,7 @@
 				7C94C8C317E1E6D4005DC66B /* AppDelegate.m */,
 				7C94C8C517E1E6D4005DC66B /* Images.xcassets */,
 				7C94C8EF17E1EB56005DC66B /* iPhone.storyboard */,
+				7CD059BE17E1F50100B82B58 /* iPad.storyboard */,
 				7CD059BA17E1ED4700B82B58 /* WatchTowerController.h */,
 				7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */,
 				7C94C8BA17E1E6D4005DC66B /* Supporting Files */,
@@ -241,6 +244,7 @@
 				7C94C8BE17E1E6D4005DC66B /* InfoPlist.strings in Resources */,
 				7C94C8EB17E1EA42005DC66B /* Localizable.strings in Resources */,
 				7C94C8C617E1E6D4005DC66B /* Images.xcassets in Resources */,
+				7CD059BF17E1F50100B82B58 /* iPad.storyboard in Resources */,
 				7C94C8F017E1EB56005DC66B /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

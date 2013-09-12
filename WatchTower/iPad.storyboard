@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="FVh-GG-fE1">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Tower Controller - Watch Tower-->
+        <scene sceneID="v2K-7Y-pfr">
+            <objects>
+                <viewController id="AVd-UW-kcj" customClass="WatchTowerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FbR-kV-VmP"/>
+                        <viewControllerLayoutGuide type="bottom" id="dTX-0H-6qd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CM6-Px-yIU">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSH-6s-ocm" userLabel="Show Button">
+                                <rect key="frame" x="352" y="974" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="gwp-8J-peB"/>
+                                    <constraint firstAttribute="height" constant="30" id="qMm-87-vdV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="AVd-UW-kcj" eventType="touchUpInside" id="oLb-jq-PxO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="OSH-6s-ocm" secondAttribute="centerX" id="7K6-rT-vs2"/>
+                            <constraint firstItem="dTX-0H-6qd" firstAttribute="top" secondItem="OSH-6s-ocm" secondAttribute="bottom" constant="20" id="drz-eZ-ywU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Watch Tower" id="Wjg-Ui-bqk"/>
+                    <connections>
+                        <outlet property="showButton" destination="OSH-6s-ocm" id="hoG-Tk-jme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meL-a5-M07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="673"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WhJ-iL-rPQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FVh-GG-fE1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MQs-aU-toM">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AVd-UW-kcj" kind="relationship" relationship="rootViewController" id="7ot-St-ZaQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65j-VB-oTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="673"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
