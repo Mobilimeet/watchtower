@@ -20,6 +20,7 @@
 		7C94C8EB17E1EA42005DC66B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C94C8ED17E1EA42005DC66B /* Localizable.strings */; };
 		7C94C8F017E1EB56005DC66B /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C94C8EF17E1EB56005DC66B /* iPhone.storyboard */; };
 		7CD059BC17E1ED4700B82B58 /* WatchTowerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD059BB17E1ED4700B82B58 /* WatchTowerController.m */; };
+		7CD059BD17E1F30500B82B58 /* dribbble_debut.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CB87FD16D0D3F100BCD3B3 /* dribbble_debut.png */; };
 		98B67E6C4F7D4C1891A7DD91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BFFA0C553346268669CB10 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -236,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD059BD17E1F30500B82B58 /* dribbble_debut.png in Resources */,
 				7C94C8BE17E1E6D4005DC66B /* InfoPlist.strings in Resources */,
 				7C94C8EB17E1EA42005DC66B /* Localizable.strings in Resources */,
 				7C94C8C617E1E6D4005DC66B /* Images.xcassets in Resources */,

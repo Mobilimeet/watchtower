@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Watch Tower Controller-->
         <scene sceneID="7G5-LB-NrZ">
             <objects>
-                <viewController id="P6Y-z1-HHI" sceneMemberID="viewController">
+                <viewController id="P6Y-z1-HHI" customClass="WatchTowerController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3oy-Fk-dmu"/>
                         <viewControllerLayoutGuide type="bottom" id="5cO-6t-MEz"/>
@@ -16,9 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="D5e-za-fJZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1M-DE-puM" userLabel="Show Button">
+                                <rect key="frame" x="128" y="518" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dzp-x9-pgc"/>
+                                    <constraint firstAttribute="width" constant="64" id="qAk-Bs-Ck0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="P6Y-z1-HHI" eventType="touchUpInside" id="e84-er-tbQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5cO-6t-MEz" firstAttribute="top" secondItem="d1M-DE-puM" secondAttribute="bottom" constant="20" id="YUU-tk-Uhh"/>
+                            <constraint firstAttribute="centerX" secondItem="d1M-DE-puM" secondAttribute="centerX" id="vuK-bX-Kam"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1uM-JR-86E"/>
+                    <connections>
+                        <outlet property="showButton" destination="d1M-DE-puM" id="MrJ-mR-WaT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THx-uw-y7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
