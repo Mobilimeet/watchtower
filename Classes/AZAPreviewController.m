@@ -141,6 +141,63 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 								   withError:error];
 		}
 	}];
+
+    /**
+     * Add some acceptable Content-Types, haven't really tested all of these...
+     *  A Quick Look preview controller can display previews for the following items:
+     *  - iWork documents
+     *  - Microsoft Office documents (Office ‘97 and newer)
+     *  - Rich Text Format (RTF) documents
+     *  - PDF files
+     *  - Images
+     *  - Text files whose uniform type identifier (UTI) conforms to the public.text type (see Uniform Type Identifiers Reference)
+     *  - Comma-separated value (csv) files
+     */
+	NSSet *acceptableContentTypes = [NSSet setWithObjects:
+	                                 @"application/x-iwork-keynote-sffkey",
+	                                 @"application/x-iwork-pages-sffpages",
+	                                 @"application/x-iwork-numbers-sffnumbers",
+	                                 @"application/vnd.apple.keynote",
+	                                 @"application/vnd.apple.pages",
+	                                 @"application/msword",
+	                                 @"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+	                                 @"application/vnd.ms-word.document.macroEnabled.12",
+	                                 @"application/vnd.ms-excel",
+	                                 @"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+	                                 @"application/vnd.ms-excel.sheet.macroEnabled.12",
+	                                 @"application/vnd.ms-excel.addin.macroEnabled.12",
+	                                 @"application/vnd.ms-excel.sheet.binary.macroEnabled.12",
+	                                 @"application/vnd.ms-powerpoint",
+	                                 @"application/vnd.openxmlformats-officedocument.presentationml.presentation",
+	                                 @"application/vnd.openxmlformats-officedocument.presentationml.template",
+	                                 @"application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+	                                 @"application/vnd.ms-powerpoint.addin.macroEnabled.12",
+	                                 @"application/vnd.ms-powerpoint.presentation.macroEnabled.12",
+	                                 @"application/vnd.ms-powerpoint.slideshow.macroEnabled.12",
+	                                 @"text/rtf",
+	                                 @"application/rtf",
+	                                 @"text/rtfd",
+	                                 @"application/rtfd",
+	                                 @"application/pdf",
+	                                 @"application/x-pdf",
+	                                 @"application/x-bzpdf",
+	                                 @"application/x-gzpdf",
+	                                 @"application/vnd.fdf",
+	                                 @"application/vnd.adobe.xfdf",
+	                                 @"image/jpeg",
+	                                 @"image/gif",
+	                                 @"image/tiff",
+	                                 @"image/x-tiff",
+	                                 @"image/png",
+	                                 @"image/bmp",
+	                                 @"text/plain",
+	                                 @"text/xml",
+	                                 @"application/xml",
+	                                 @"text/html",
+	                                 nil];
+
+    operation.responseSerializer = [AFHTTPResponseSerializer serializer];
+    operation.responseSerializer.acceptableContentTypes = acceptableContentTypes;
     [operation start];
 	
 	return previewItemCopy;
