@@ -177,7 +177,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ilter Cengiz";
 				TargetAttributes = {
 					7C94C8B417E1E6D4005DC66B = {
@@ -293,7 +293,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 356D86C4B6E048D986F16E65 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
@@ -323,7 +322,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 356D86C4B6E048D986F16E65 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
