@@ -1,4 +1,4 @@
-platform :ios, '6.1'
+platform :ios, '7.0'
 
-pod 'AFNetworking', '1.3.2'
-pod 'SVProgressHUD'
+pod 'AFNetworking', '2.2.3'
+pod 'SVProgressHUD', '1.0'
