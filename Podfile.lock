@@ -18,11 +18,11 @@ PODS:
   - AFNetworking/UIKit (2.2.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - SVProgressHUD (1.0)
+  - SVProgressHUD (HEAD based on 1.0)
 
 DEPENDENCIES:
   - AFNetworking (= 2.2.3)
-  - SVProgressHUD (= 1.0)
+  - SVProgressHUD (HEAD)
 
 SPEC CHECKSUMS:
   AFNetworking: ae513199cca79e9d7af2708ccabe2ed075550c42
