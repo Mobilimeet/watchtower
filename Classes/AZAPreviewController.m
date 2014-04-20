@@ -16,7 +16,7 @@ static NSString *AZAMD5StringFromNSString(NSString *string)
 {
 	NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
 	unsigned char digest[CC_MD5_DIGEST_LENGTH], i;
-	CC_MD5([data bytes], [data length], digest);
+	CC_MD5([data bytes], (CC_LONG)[data length], digest);
 	NSMutableString *result = [NSMutableString string];
 	for (i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
 		[result appendFormat: @"%02x", (int)(digest[i])];
