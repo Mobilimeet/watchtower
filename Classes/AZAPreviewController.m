@@ -62,10 +62,8 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	if (!self) {
 		return nil;
 	}
-	
-	// Base URL doesn't matter since we're 
-	NSURL *baseURL = [NSURL URLWithString:@"http://example.com"];
-	self.httpRequestManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
+
+	self.httpRequestManager = [AFHTTPRequestOperationManager manager];
 	
 	return self;
 }
