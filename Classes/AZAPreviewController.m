@@ -50,7 +50,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 
 
 @interface AZAPreviewController () <QLPreviewControllerDataSource, QLPreviewControllerDelegate>
-@property (nonatomic, strong) AFHTTPClient *httpClient;
+@property (nonatomic, strong) AFHTTPRequestOperationManager *httpRequestManager;
 @property (nonatomic, weak) id<QLPreviewControllerDataSource> actualDataSource;
 @end
 
@@ -65,7 +65,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	
 	// Base URL doesn't matter since we're 
 	NSURL *baseURL = [NSURL URLWithString:@"http://example.com"];
-	self.httpClient = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+	self.httpRequestManager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
 	
 	return self;
 }
@@ -112,7 +112,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 	// If it's not a local file, put a placeholder instead
 	__block NSInteger capturedIndex = index;
 	NSURLRequest *request = [NSURLRequest requestWithURL:originalURL];
-	AFHTTPRequestOperation *operation = [self.httpClient HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+	AFHTTPRequestOperation *operation = [self.httpRequestManager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
 		NSAssert([responseObject isKindOfClass:[NSData class]], @"Unexpected response: %@", responseObject);
 		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 			NSError *error = nil;
@@ -143,7 +143,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 								   withError:error];
 		}
 	}];
-	[self.httpClient enqueueHTTPRequestOperation:operation];
+    [operation start];
 	
 	return previewItemCopy;
 }
