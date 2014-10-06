@@ -56,17 +56,6 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 
 @implementation AZAPreviewController
 
-- (id)init
-{
-	self = [super init];
-	if (!self) {
-		return nil;
-	}
-
-	self.httpRequestManager = [AFHTTPRequestOperationManager manager];
-	
-	return self;
-}
 
 #pragma mark - Properties
 
@@ -79,6 +68,16 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
 - (id<QLPreviewControllerDataSource>)dataSource
 {
 	return self.actualDataSource;
+}
+
+- (AFHTTPRequestOperationManager *)httpRequestManager
+{
+  if(!_httpRequestManager)
+  {
+    _httpRequestManager = [AFHTTPRequestOperationManager manager];
+  }
+
+  return _httpRequestManager;
 }
 
 #pragma mark - QLPreviewControllerDataSource
