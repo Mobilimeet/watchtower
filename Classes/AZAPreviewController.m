@@ -199,7 +199,7 @@ static NSString *AZALocalFilePathForURL(NSURL *URL)
     operation.responseSerializer.acceptableContentTypes = acceptableContentTypes;
     [operation start];
 	
-	return previewItemCopy;
+	return [AZAPreviewItem previewItemWithURL:nil title:nil];
 }
 
 @end
